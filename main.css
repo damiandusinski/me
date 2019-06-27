@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+.logo-text {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+}
+
+.top-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 25px;
+}
+.logo {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 5vh;
+  border-bottom: 4px solid#11849D;
+  border-right: 4px solid #11849d;
+}
+
+.logo-text {
+  color: #11849d;
+  position: absolute;
+  left: 5vw;
+  bottom: -4px;
+  transform: translateY(50%);
+  background-color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.menu nav ul {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.menu nav ul li a {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #11849d;
+  font-weight: 100;
+  text-align: center;
+}
+@media (orientation: landscape) {
+  .menu nav ul {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 350px;
+  }
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-box {
+  position: absolute;
+  border-top: 4px solid #11849d;
+  border-right: 4px solid #11849d;
+  left: 0;
+  bottom: 0;
+  width: 90vw;
+  height: 30vh;
+}
+
+.hero-head {
+  position: absolute;
+  font-size: 2.2rem;
+  top: -4px;
+  transform: translateY(-50%);
+  left: 15vw;
+  background-color: #fff;
+  padding: 10px 20px;
+  color: #11849d;
+}
+
+.about-me {
+  position: relative;
+  height: 100vh;
+  background-color: #11849d;
+  color: #fff;
+}
+.about-me-text {
+  position: relative;
+  text-align: justify;
+  font-size: 1.6rem;
+
+  font-weight: 100;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-me-head {
+  position: absolute;
+  font-size: 28px;
+  top: -4px;
+  transform: translateY(-50%);
+  left: 15%;
+  background-color: #11849d;
+  padding: 10px 20px;
+}
+.about-me-container {
+  position: absolute;
+  bottom: 0;
+  right: 10vw;
+  width: 80vw;
+  height: 90vh;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+}
+.about-me-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(-10vh - 4px);
+  right: 0;
+  height: 10vh;
+  border-left: 4px solid white;
+}
